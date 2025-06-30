@@ -51,4 +51,4 @@ test-results/
 junit.xml
 
 # Power Designer files
-PowerDesigner/
+#PowerDesigner/
