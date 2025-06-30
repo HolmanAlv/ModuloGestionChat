@@ -1,0 +1,1 @@
+se tuvo que cambiar la longitud de idTipoArchivo en la tabla TipoArchivo de VA 2 a VA 3 por lo requerimido en el pdf
