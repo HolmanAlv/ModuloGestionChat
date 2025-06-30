@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      ORACLE Version 11g                           */
-/* Created on:     30/06/2025 3:46:05 a. m.                     */
+/* Created on:     30/06/2025 4:20:20 a. m.                     */
 /*==============================================================*/
 
 
@@ -239,7 +239,7 @@ create table CONTENIDO
    CONSMESAJE           NUMBER(5,0)          not null,
    CONSECONTENIDO       NUMBER(2,0)          not null,
    IDTIPOCONTENIDO      VARCHAR2(2)          not null,
-   IDTIPOARCHIVO        VARCHAR2(2),
+   IDTIPOARCHIVO        VARCHAR2(3),
    CONTENIDOIMAG        BLOB                 not null,
    LOCALIZACONTENIDO    VARCHAR2(255),
    constraint PK_CONTENIDO primary key (CONSECUSERRECIBE, CONSECUSERENVIA, CONSMESAJE, CONSECONTENIDO)
@@ -415,7 +415,7 @@ create index SEGUIR_FK on SEGUIRUSERUSER (
 /*==============================================================*/
 create table TIPOARCHIVO 
 (
-   IDTIPOARCHIVO        VARCHAR2(2)          not null,
+   IDTIPOARCHIVO        VARCHAR2(3)          not null,
    DESCTIPOARCHIVO      VARCHAR2(30)         not null,
    constraint PK_TIPOARCHIVO primary key (IDTIPOARCHIVO)
 );
